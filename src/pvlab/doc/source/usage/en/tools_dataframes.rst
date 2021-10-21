@@ -11,22 +11,25 @@ It contains the following python modules:
 Module dfdicts
 ^^^^^^^^^^^^^^
 
-.. py:module:: pvlab.dataframes.dfdicts
+.. py:module:: 'pvlab.dataframes.dfdicts'
 
-   Perform type-conversion and *pretty-print* operations for dictionaries.
+Perform type-conversion and *pretty-print* operations for dictionaries.
 
-   It contains the following functions:
+It contains the following functions:
 
 
 .. py:function:: dict_to_df(dictionary: dict, columns: list) -> pandas.core.frame.DataFrame
 
-   Re-arrange a dictionary to become a pandas dataframe.
+   
+Re-arrange a dictionary to become a pandas dataframe.
 
-   It performs a type conversion of a dictionary (e.g. a dictionary that
-   represents some kind of valid time intervals), returning a ``pandas`` DataFrame:
+It performs a type conversion of a dictionary (e.g. a dictionary that
+represents some kind of valid time intervals), returning a ``pandas.DataFrame``:
 
-   When the correct parameters are provided, it **returns** a ``pandas.DataFrame``
-   object.
+Code examples:
+   
+When the correct parameters are provided, it **returns** a ``pandas.DataFrame``
+object:
 
 .. code-block:: python
    :linenos:
@@ -34,6 +37,7 @@ Module dfdicts
    :emphasize-lines: 4-6
    :caption: Example 1: correct fuctioning.
    :name: dict_to_df_correct
+   
    dates = {'START_1': (2021,5,5,8,1,0), 'END_1': (2021,5,6,22,52,0)}
    columns = ['%Y', '%m', '%d', '%H', '%M', '%S']
    dict_to_df(dates, columns)
@@ -50,6 +54,7 @@ does not match with the values of the given dictionary:
    :emphasize-lines: 9-11
    :caption: Example 2: column shorter than expected.
    :name: dict_to_df_shorter
+   
    columns = ['%Y', '%m', '%d', '%H', '%M']
    dict_to_df(dates, columns)
    Traceback (most recent call last):
