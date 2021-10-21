@@ -16,35 +16,6 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html
 import os
 import sys
 import pvlab
-sys.path.insert(0, os.path.abspath('.'))
-sys.path.insert(1, os.path.abspath('..'))
-sys.path.insert(2, os.path.abspath(os.path.join('..',
-                                                'src',
-                                                'pvlab')))
-sys.path.insert(6, os.path.abspath(os.path.join('..',
-                                                'src',
-                                                'pvlab',
-                                                'dataframes')))
-sys.path.insert(6, os.path.abspath(os.path.join('..',
-                                                'src',
-                                                'pvlab',
-                                                'doc')))
-sys.path.insert(6, os.path.abspath(os.path.join('..',
-                                                'src',
-                                                'pvlab',
-                                                'math')))
-sys.path.insert(6, os.path.abspath(os.path.join('..',
-                                                'src',
-                                                'pvlab',
-                                                'test')))
-sys.path.insert(7, os.path.abspath(os.path.join('.',
-                                                'usage')))
-sys.path.insert(8, os.path.abspath(os.path.join('.',
-                                                'usage',
-                                                'en')))
-sys.path.insert(10, os.path.abspath(os.path.join('.',
-                                                 'usage',
-                                                 'en')))
 
 # -- Project information -----------------------------------------------------
 
