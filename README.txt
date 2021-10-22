@@ -19,7 +19,7 @@ procedures of solar sensors and photovoltaic devices.
 History
 -------
 The origin of ```pvlab`` is a python tool, named ``calibration``,
-developed in 2019 in the laboratory |lab| at the |ciemat| for its
+developed in 2019 in the |lab| at the |ciemat| for its
 own use. It was originally designed to manage the big amount of data
 generated during the outdoor measurements when performing the routine
 calibration of pyranometers.
