@@ -18,6 +18,7 @@ Contain the trigonometric function hypot, almost equal to math.hypot.
 It supports n-dimensional coordinates. It is intended for using when
 working with versions of python older than 3.8.
 
+
 .. note::
    In python v3.8, it was added support for n-dimensional points.
    Then, in python 3.10, accuracy was improved.
