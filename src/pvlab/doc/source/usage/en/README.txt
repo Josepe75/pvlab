@@ -47,7 +47,8 @@ robustness and performance, they will be progresively incorporated to the
 ``pvlab`` library. In order to clarify the features and abilities of the
 objects created, docstrings of relevant functions or classess contain
 examples, which have been verified with the python built-in
-package ``doctest``.
+package ``doctest``. In addition, there should be a *test_[module]*
+for each one, checked by using the *unittest* built-in package.
 
 .. _Laboratory of Photovoltaic Solar Energy (PVLab): https://www.pvlab.ciemat.es>
 .. _Research Center for Energy, Environment and Technology (CIEMAT): https://www.ciemat.es
