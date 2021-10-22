@@ -22,7 +22,7 @@ It contains the following functions:
 
    Re-arrange a dictionary to become a pandas dataframe.
    It performs a type conversion of a dictionary (e.g. a dictionary that
-   represents some kind of valid time intervals), returning a ``pandas.DataFrame``:
+   represents some kind of valid time intervals), returning a pandas.DataFrame.
 
 Code examples:
    
@@ -66,8 +66,8 @@ does not match the length of the values of the given dictionary:
 .. py:function:: print_dict(dictionary: dict, columns: list, title: str = '') -> None
 
    *Prettyprint* a dictionary of dates, adding a title.
-   It appears to be similar to ``dict_to_df``, but ``print_dict`` *just* print,
-   (it does not return a ``pandas.DataFrame`` object, **it returns** ``None``):
+   It appears to be similar to **dict_to_df**, but **print_dict** *just* print,
+   (it does **not** return a **pandas.DataFrame** object, **it returns** *None*):
 
 **Example 4**: correct use of function ``pvlab.dataframes.print_dict``.
 
