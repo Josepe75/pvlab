@@ -41,7 +41,7 @@ object:
    END_1    2021   5   6  22  52   0
 
 Otherwise, a ``ValueError`` is raised when the length of ``columns``
-does not match with the values of the given dictionary:
+does not match the length of the values of the given dictionary:
 
 **Example 2**: list of columns shorter than expected.
 
