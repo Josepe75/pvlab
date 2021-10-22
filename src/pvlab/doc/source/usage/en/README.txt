@@ -8,13 +8,10 @@ PVLAB is a project devoted to the development and improvement of scientific
 software for the measurement, calibration and modeling of the performance of
 photovoltaic devices and solar sensors. PVLAB package was born from the efforts
 made to perform the data treatment during the calibration of pyranometers at
-the *Laboratory of Photovoltaic Solar Energy (PVLab)* (http://pvlab.ciemat.es/home)
-of the `Research Center
-for Energy, Environment and Technology (CIEMAT)`_
-in Madrid, Spain.
-In next releases, ``pvlab`` will provide sets of tools,
-mainly consisting in classes  and functions,
-to perform the data treatment for the calibration of
+the `Laboratory of Photovoltaic Solar Energy (PVLab)`_ of the `Research Center
+for Energy, Environment and Technology (CIEMAT)`_ in Madrid, Spain.
+In next releases, ``pvlab`` will provide sets of tools, mainly consisting in
+classes and functions, to perform the data treatment for the calibration of
 pyranometers and other type of solar sensors and photovoltaic devices.
 Eventually, ``pvlab`` will try to widen its scope to further calibration
 procedures of solar sensors and photovoltaic devices.
@@ -52,3 +49,4 @@ package ``doctest``. In addition, there should be a *test_[module]*
 for each one, checked by using the *unittest* built-in package.
 
 .. _Research Center for Energy, Environment and Technology (CIEMAT): https://www.ciemat.es
+.. _Laboratory of Photovoltaic Solar Energy (PVLab): pvlab.ciemat.es
