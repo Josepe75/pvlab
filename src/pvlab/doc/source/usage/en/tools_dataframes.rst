@@ -29,7 +29,7 @@ Code examples:
 When correct parameters are provided, it **returns** a ``pandas.DataFrame``
 object:
 
-**Example 1**: correct use of fuction ``pvlab.dataframes.dfdicts``.
+**Example 1**: correct use of function ``pvlab.dataframes.dfdicts``.
 
 .. code-block:: python
 
