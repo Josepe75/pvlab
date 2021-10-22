@@ -4,20 +4,18 @@ Sub-package dataframes
 
 .. py:module:: pvlab.dataframes
 
-Provide tools to manage dataframes in the context of calibration.
+   Provide tools to manage dataframes in the context of calibration.
 
-
-It contains the following python modules:
+   It contains the following python modules:
 
 Module dfdicts
 ^^^^^^^^^^^^^^
 
 .. py:module:: 'pvlab.dataframes.dfdicts'
 
-Perform type-conversion and *pretty-print* operations for dictionaries.
+   Perform type-conversion and *pretty-print* operations for dictionaries.
 
-
-It contains the following functions:
+   It contains the following functions:
 
 
 .. py:function:: dict_to_df(dictionary: dict, columns: list) -> pandas.core.frame.DataFrame
@@ -63,7 +61,6 @@ does not match with the values of the given dictionary:
    dict_to_df(dates, columns)
    Traceback (most recent call last):
    ValueError: Length of columns list is equal to 7, but has to be equal to 6.
-
 
 
 .. py:function:: print_dict(dictionary: dict, columns: list, title: str = '') -> None
