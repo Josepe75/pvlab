@@ -4,18 +4,18 @@ Sub-package dataframes
 
 .. py:module:: pvlab.dataframes
 
-   Provide tools to manage dataframes in the context of calibration.
+Provide tools to manage dataframes in the context of calibration.
 
-   It contains the following python modules:
+It contains the following python modules:
 
 Module dfdicts
 ^^^^^^^^^^^^^^
 
-.. py:module:: 'pvlab.dataframes.dfdicts'
+.. py:module:: pvlab.dataframes.dfdicts
 
-   Perform type-conversion and *pretty-print* operations for dictionaries.
+Perform type-conversion and *pretty-print* operations for dictionaries.
 
-   It contains the following functions:
+It contains the following functions:
 
 
 .. py:function:: dict_to_df(dictionary: dict, columns: list) -> pandas.core.frame.DataFrame
@@ -29,7 +29,7 @@ Code examples:
 When correct parameters are provided, it **returns** a ``pandas.DataFrame``
 object:
 
-**Example 1**: correct functioning.
+**Example 1**: correct use of fuction ``pvlab.dataframes.dfdicts``.
 
 .. code-block:: python
 
@@ -69,7 +69,7 @@ does not match with the values of the given dictionary:
    It appears to be similar to ``dict_to_df``, but ``print_dict`` *just* print,
    (it does not return a ``pandas.DataFrame`` object, **it returns** ``None``):
 
-**Example 4**: correct functioning.
+**Example 4**: correct use of function ``pvlab.dataframes.print_dict``.
 
 .. code-block:: python
 
