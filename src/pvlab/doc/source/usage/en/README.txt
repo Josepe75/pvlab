@@ -31,8 +31,9 @@ Soon, both the *python programming language* and the ``calibration`` tool
 themselves proved to be quick and reliable methods for data treatment.
 Gradually, the code grew in complexity, whereas new functionalities were
 enabled. Indeed, to the basic requirements of data *I/O* and a first block
-of calculations, some others joined, like fine data-filtering, tools
-developed to generate reports, graphics and further calibration records.
+of calculations, some others joined, like fine data-filtering, determination
+of total uncertainty, tools for report generation, graphics
+and further calibration records.
 
 Finally, when it was concluded the development of the version 2.0.0 of the
 application ``calibration``, it made us clear that a formal package should
@@ -40,7 +41,7 @@ be released, separately from the former tool. By doing so, some of the
 resources created are now at disposal of the community, under a 3-clause
 BSD License.
 
-The path chosen for the development of ``pvlab`` is that,
+The main path chosen for the development of ``pvlab`` is that,
 as functions and classes created for its use at the lab are being adapted
 from their specific purpose to more general cases, and it is proved their
 robustness and performance, they will be progresively incorporated to the
