@@ -8,14 +8,14 @@ Provide tools for mathematical or statistical operations.
 
 It contains the following modules:
 
-Module hypot
+Module module
 ^^^^^^^^^^^^
 
 .. py:module:: pvlab.math.hypot
 
-Contain the trigonometric function hypot, almost equal to math.hypot.
+Calculates the module of a vector (n-dimensions).
 
-It supports n-dimensional coordinates. It is intended for using when
+It supports n-dimensional components. It is intended for using when
 working with versions of python older than 3.8.
 
 
@@ -25,30 +25,30 @@ working with versions of python older than 3.8.
    `Here`_ for further information.
 
 
-.. py:function:: pvlab.math.hypot(*coordinates: Sequence[float]) -> float:
+.. py:function:: pvlab.math.module(*components: Sequence[float]) -> float:
 
-   Calculate the module of a vector, given its coordinates.
+   Calculate the module of a vector, given its components.
 
 
 
-**Example 1**: correct use of function ``pvlab.math.hypot``.
+**Example 1**: correct use of function ``pvlab.math.module``.
 
 .. code-block:: python
 
-   coordinates = [5, 8, 3, 6]
-   round(hypot(*coordinates), 3)
+   components = [5, 8, 3, 6]
+   round(module(*components), 3)
    11.576
 
 
 
-**Example 2**: ``coordinates`` must be ``float`` or ``int`` types.
+**Example 2**: ``components`` must be ``float`` or ``int`` types.
 
 .. code-block:: python
 
-   coordinates = [5, 3, 8, '6']
-   hypot(*coordinates)
+   components = [5, 3, 8, '6']
+   module(*components)
    Traceback (most recent call last):
-   TypeError: coordinates items must be int or float types.
+   TypeError: components items must be int or float types.
 
 
 
