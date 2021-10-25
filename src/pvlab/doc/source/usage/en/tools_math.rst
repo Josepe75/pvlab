@@ -11,7 +11,7 @@ It contains the following modules:
 Module module
 ^^^^^^^^^^^^
 
-.. py:module:: pvlab.math.hypot
+.. py:module:: pvlab.math.module
 
 Calculates the module of a vector (n-dimensions).
 
