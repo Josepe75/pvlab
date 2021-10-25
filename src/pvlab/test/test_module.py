@@ -8,7 +8,7 @@ Created on Mon May 31 07:00:52 2021.
 @author: josepedro
 """
 import unittest
-from pvlab.tools.math.module import module
+from pvlab.math.module import module
 
 
 class ModuleTest(unittest.TestCase):
