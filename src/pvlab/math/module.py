@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Contain the function module.
+Calculates the module of a vector (n-components).
 
 It supports n-dimensional components, to apply e.g. in the calculation
 of type b uncertainty of calibration, for compatibility with python versions previous
