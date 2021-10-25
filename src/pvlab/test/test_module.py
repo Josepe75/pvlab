@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Testing of module hypot.
+Testing of function "module".
 
 Created on Mon May 31 07:00:52 2021.
 
