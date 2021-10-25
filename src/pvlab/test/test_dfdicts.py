@@ -8,7 +8,7 @@ Created on Thu Oct 14 12:07:18 2021
 """
 import unittest
 import pandas
-from pvlab.tools.dataframes.dfdicts import dict_to_df
+from pvlab.dataframes.dfdicts import dict_to_df
 
 
 class Dfdicts(unittest.TestCase):
