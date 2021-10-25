@@ -17,4 +17,4 @@ for Energy, Environment and Technology (CIEMAT) in Madrid, Spain. The aim of
 PVLAB is to provide a set of tools, mainly consisting in classes and
 functions, to perform the data treatment for the calibration of pyranometers.
 """
-__version__ = '0.1.0.dev2'
+__version__ = '0.1.0.dev3'
