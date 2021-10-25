@@ -4,8 +4,8 @@
 Calculates the module of a vector (n-components).
 
 It supports n-dimensional components, to apply e.g. in the calculation
-of type b uncertainty of calibration, for compatibility with python versions previous
-than 3.8, whose function hypot does not support n-dimensional points.
+of type b uncertainty of calibration, for compatibility with python versions
+previous than 3.8, whose function hypot does not support n-dimensional points.
 In python v3.8, it was added support for n-dimensional points.
 In python 3.10, accuracy was improved.
 
