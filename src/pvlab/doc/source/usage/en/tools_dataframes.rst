@@ -17,6 +17,8 @@ Perform type-conversion and *pretty-print* operations for dictionaries.
 
 It contains the following functions:
 
+Function dict_to_df
+"""""""""""""""""""
 
 .. py:function:: dict_to_df(dictionary: dict, columns: list) -> pandas.core.frame.DataFrame
 
@@ -52,6 +54,8 @@ does not match the length of the values of the given dictionary:
    Traceback (most recent call last):
    ValueError: Length of columns list is equal to 5, but has to be equal to 6.
 
+Function print_dict
+"""""""""""""""""""
 
 **Example 3**: list of columns longer than expected.
 
