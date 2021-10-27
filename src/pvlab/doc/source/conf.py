@@ -18,33 +18,40 @@ import sys
 sys.path.insert(0, os.path.abspath('.'))
 sys.path.insert(1, os.path.abspath('..'))
 sys.path.insert(2, os.path.abspath(os.path.join('..',
-                                                'src',
-                                                'pvlab')))
+                                                '..',
+                                               )))
+sys.path.insert(3, os.path.abspath(os.path.join('..',
+                                                '..',
+                                                'dataframes',
+                                               )))
+sys.path.insert(4, os.path.abspath(os.path.join('..',
+                                                '..',
+                                                'doc',
+                                               )))
+sys.path.insert(5, os.path.abspath(os.path.join('..',
+                                                '..',
+                                                'io',
+                                               )))
 sys.path.insert(6, os.path.abspath(os.path.join('..',
-                                                'src',
-                                                'pvlab',
-                                                'dataframes')))
+                                                '..',
+                                                'math',
+                                               )))
 sys.path.insert(6, os.path.abspath(os.path.join('..',
-                                                'src',
-                                                'pvlab',
-                                                'doc')))
-sys.path.insert(6, os.path.abspath(os.path.join('..',
-                                                'src',
-                                                'pvlab',
-                                                'math')))
-sys.path.insert(6, os.path.abspath(os.path.join('..',
-                                                'src',
-                                                'pvlab',
-                                                'test')))
+                                                '..',
+                                                'test',
+                                               )))
 sys.path.insert(7, os.path.abspath(os.path.join('.',
-                                                'usage')))
+                                                'usage',
+                                               )))
 sys.path.insert(8, os.path.abspath(os.path.join('.',
                                                 'usage',
-                                                'en')))
+                                                'en',
+                                               )))
 sys.path.insert(10, os.path.abspath(os.path.join('.',
                                                  'usage',
-                                                 'en')))
-
+                                                 'en',
+                                                 'releases',
+                                                )))
 # -- Project information -----------------------------------------------------
 
 project = 'pvlab'
@@ -52,7 +59,7 @@ copyright = '2021, Silva J.P.'
 author = 'Silva J.P'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1.0.dev5'
+release = '0.1.0.dev6'
 
 # The major project version, use as the replacement for |version|
 version = '0.1.0'
