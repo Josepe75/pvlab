@@ -1,6 +1,6 @@
-======================
-Sub-package dataframes
-======================
+=================
+Create Dataframes
+=================
 
 .. py:module:: pvlab.dataframes
 
@@ -8,8 +8,8 @@ Provide tools to manage dataframes in the context of calibration.
 
 It contains the following python modules:
 
-Module dfdicts
-^^^^^^^^^^^^^^
+DataFrames from dicts
+^^^^^^^^^^^^^^^^^^^^^
 
 .. py:module:: pvlab.dataframes.dfdicts
 
