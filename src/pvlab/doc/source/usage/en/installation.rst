@@ -2,8 +2,8 @@
 Installation
 ============
 
-From the Python installer
--------------------------
+From Python installer
+---------------------
 
 From pip, proceed as follows:
 
@@ -29,8 +29,8 @@ Finally, the |app| package can be installed:
 
 :literal:`python -m pip install --upgrade pvlab`
 
-From the Anaconda IDE
----------------------
+From Anaconda IDE
+-----------------
 
 When using the `Anaconda IDE`_, |app| can be installed both by typing:
 
