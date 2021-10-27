@@ -17,4 +17,5 @@ See what's new in the latest release of ``pvlab`` project.
    /usage/en/releases/v0.1.0.dev3
    /usage/en/releases/v0.1.0.dev4
    /usage/en/releases/v0.1.0.dev5
+   /usage/en/releases/v0.1.0.dev6
    
