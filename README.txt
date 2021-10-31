@@ -38,15 +38,33 @@ be released, separately from the former tool. By doing so, some of the
 resources created are now at disposal of the scientific community, under a
 3-clause BSD License.
 
-The main procedure chosen for the early development of ``pvlab`` is that,
+Development
+-----------
+One procedure chosen for the early development of ``pvlab`` is that,
 as functions and classes created for its use at the lab are being adapted
 from their specific purpose to address more general cases, and their
 robustness and performance is considered sufficiently proved, they will be
-progresively incorporated to the ``pvlab`` library. In order to clarify the
-features and abilities of the objects created, docstrings of relevant
-functions or classess contain examples, which have been verified with
-the python built-in package ``doctest``. In addition, there is a *test_[module]*
-for each one, checked by using the *unittest* built-in package.
+progresively incorporated to the ``pvlab`` library.
+
+In order to clarify the features and abilities of the objects created,
+docstrings of relevant functions or classess contain examples, which have
+been verified with the python built-in package ``doctest``.
+In addition, there is a *test_[module]* ready for each one, checked by using
+the *unittest* built-in package.
+
+On the other hand, author's best hope is that ``pvlab`` will eventually
+turn into a **community-developed library**, so contributions and 
+constructive comments are welcome. At this respect, ``pvlab``adopt the
+aim of providing resources in the context of measurement, calibration,
+determination of uncertainty, validation techniques and potentially,
+many other utilities for the improvement of data treatment for solar sensors
+and photovoltaic devices.
+
+In the long term, a more general purpose lies in the background, and that
+is the advance of data science and the development of software projects for
+scientific purposes, even "knocking at the doors" of data mining, machine
+learning and deep learning techniques.
+
 
 .. _Research Center for Energy, Environment and Technology (CIEMAT): https://www.ciemat.es
 .. _Laboratory of Photovoltaic Solar Energy (PVLab): pvlab.ciemat.es
