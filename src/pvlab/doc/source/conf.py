@@ -56,7 +56,7 @@ sys.path.insert(10, os.path.abspath(os.path.join('.',
 
 project = 'pvlab'
 copyright = '2021, Silva J.P.'
-author = 'Silva J.P'
+author = 'Silva J.P.'
 
 # The full version, including alpha/beta/rc tags
 release = '0.1.0.dev7'
