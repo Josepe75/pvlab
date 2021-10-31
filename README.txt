@@ -43,7 +43,7 @@ Development
 One procedure chosen for the early development of ``pvlab`` is that,
 as functions and classes created for its use at the lab are being adapted
 from their specific purpose to address more general cases, and their
-robustness and performance is considered sufficiently proved, they will be
+robustness and performance is considered sufficiently tested, they will be
 progresively incorporated to the ``pvlab`` library.
 
 In order to clarify the features and abilities of the objects created,
