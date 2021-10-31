@@ -41,5 +41,5 @@ or, alternatively, from the |Anaconda| navigator, following the sequence:
 
 .. _Anaconda IDE: https://www.anaconda.com
 .. |MacOS (C)| unicode:: MacOS 0xA9
-.. |Windows| unicode:: *Windows* U+2122
-.. |Anaconda| unicode:: *Anaconda* U+2122
+.. |Windows| unicode:: Windows U+2122
+.. |Anaconda| unicode:: Anaconda U+2122
