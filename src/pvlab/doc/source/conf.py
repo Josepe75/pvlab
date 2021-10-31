@@ -59,7 +59,7 @@ copyright = '2021, Silva J.P.'
 author = 'Silva J.P'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1.0.dev6'
+release = '0.1.0.dev7'
 
 # The major project version, use as the replacement for |version|
 version = '0.1.0'
