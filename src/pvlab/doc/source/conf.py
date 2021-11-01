@@ -15,6 +15,7 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html
 #
 import os
 import sys
+import myst-parser
 sys.path.insert(0, os.path.abspath('.'))
 sys.path.insert(1, os.path.abspath('..'))
 sys.path.insert(2, os.path.abspath(os.path.join('..',
@@ -80,6 +81,7 @@ master_doc = 'index'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.intersphinx',
+    'myst_parser',
 ]
 intersphinx_mapping = {'phython': ('https://docs.python.org/3', None)}
 
