@@ -44,6 +44,7 @@ Function get_dict
    data = "readings:21\nminG:600\nrefG:1000"
    settings = get_dict(io.StringIO(data), dtype='int', isStringIO=True)
    # ... argument "io.StringIO(data)" can be replaced by a file name.
+   
    settings
    {'readings': 21, 'minG': 600, 'refG': 1000}
 
@@ -57,6 +58,7 @@ Function get_dict
    
    data = "man.:'manufacturer'\nmod.:'model'\nsn.:'seriesnr'"
    mydict = get_dict(io.StringIO(data), dtype='str', isStringIO=True)
+   
    mydict
    {'man.': 'manufacturer', 'mod.': 'model', 'sn.': 'seriesnr'}
 
@@ -82,12 +84,16 @@ Function get_dicts_list
    
    floatdata = "maxdev:0.02\noffsetthreeshold:2.0"
    filters = io.StringIO(floatdata)  # StringIO_1 (or filename_1)
+   
    strdata = "mode_refpyr:'voltage'\nmode_dut:'currentloop'"
    calmode = io.StringIO(strdata)  # StringIO_2 (or filename_2)
+   
    isstringio = ['True', 'True']  # io.StringIO objects? (defaults False)
    caliblist = get_dicts_list([filters, calmode], ['float', 'str'], isStringIO=isstringio)  # it returns a list of python dicts.
+   
    caliblist[0]  # ...data from StringIO_1 (or filename_1)
    {'maxdev': 0.02, 'offsetthreeshold': 2.0}
+   
    caliblist[1]  # ... data from StringIO_2 (or filename_2)
    {'mode_refpyr': 'voltage', 'mode_dut': 'currentloop'}
    
