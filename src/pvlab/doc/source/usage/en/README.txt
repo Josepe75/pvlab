@@ -60,7 +60,7 @@ determination of uncertainty, validation techniques and potentially,
 many other utilities for the improvement of data treatment for solar sensors
 and photovoltaic devices.
 
-In the long term, a more general purpose lies in the background, and that
+In the long term, a more general purpose lies in the background, which
 is the advance of data science and the development of software projects for
 scientific purposes, even "knocking at the doors" of data mining, machine
 learning and deep learning techniques.
