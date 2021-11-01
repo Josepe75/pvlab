@@ -52,7 +52,7 @@ been verified with the python built-in package ``doctest``.
 In addition, there is a *test_[module]* ready for each one, checked by using
 the *unittest* built-in package.
 
-On the other hand, author's best hope is that ``pvlab`` will eventually
+On the other hand, author's hope is that ``pvlab`` will eventually
 turn into a **community-developed library**, so contributions and 
 constructive comments are welcome. At this respect, ``pvlab``adopt the
 aim of providing resources in the context of measurement, calibration,
