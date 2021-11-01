@@ -40,6 +40,7 @@ Function get_dict
 
    from io import StringIO
    from pvlab.io.dictmaker import get_dict
+   
    data = "readings:21\nminG:600\nrefG:1000"
    settings = get_dict(io.StringIO(data), dtype='int', isStringIO=True)
    # ... argument "io.StringIO(data)" can be replaced by a file name.
@@ -53,6 +54,7 @@ Function get_dict
 
    from io import StringIO
    from pvlab.io.dictmaker import get_dict
+   
    data = "man.:'manufacturer'\nmod.:'model'\nsn.:'seriesnr'"
    mydict = get_dict(io.StringIO(data), dtype='str', isStringIO=True)
    mydict
@@ -77,6 +79,7 @@ Function get_dicts_list
 
    from io import StringIO
    from pvlab.io.dictmaker import get_dicts_list
+   
    floatdata = "maxdev:0.02\noffsetthreeshold:2.0"
    filters = io.StringIO(floatdata)  # StringIO_1 (or filename_1)
    strdata = "mode_refpyr:'voltage'\nmode_dut:'currentloop'"
