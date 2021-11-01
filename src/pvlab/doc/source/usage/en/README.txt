@@ -54,7 +54,7 @@ the *unittest* built-in package.
 
 On the other hand, author's best hope is that ``pvlab`` will eventually
 turn into a **community-developed library**, so contributions and 
-constructive comments are welcome. At this respect, ``pvlab``adopt the
+constructive comments are welcome. At this respect, ``pvlab`` adopt the
 aim of providing resources in the context of measurement, calibration,
 determination of uncertainty, validation techniques and potentially,
 many other utilities for the improvement of data treatment for solar sensors
