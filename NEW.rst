@@ -1,7 +1,7 @@
 Release 0.1.0.dev7
 ------------------
 
-1. Added two new functions in sub-package ``ìo``:
+1. Added two new functions in sub-package ``io``:
    #. ``set_channels(numbers: Iterable[int], names: Iterable[str], nameafter: bool = True) -> Iterable[str])``.
    #. ``set_channels_grouped(numbergroups: Iterable[Iterable[int]], namegroups: Iterable[Iterable[str]], nameafter: Iterable[bool] = True, unify: bool = True, init_channels: list = []) -> Iterable[str]``.
 
