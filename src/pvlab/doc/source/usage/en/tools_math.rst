@@ -18,7 +18,7 @@ Composition of quantities, intended for statistical purposes.
 Function module
 """""""""""""""
 
-.. py:function:: pvlab.math.module(*components: Sequence[float]) -> float:
+.. py:function:: pvlab.math.module.module(*components: Sequence[float]) -> float:
 
    Calculate the module of a vector, or the result of a quadratic composition,
    given its components. It supports n-dimensional components.
