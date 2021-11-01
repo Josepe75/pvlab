@@ -38,9 +38,11 @@ Function get_dict
 
 .. code-block:: python
 
+   from io import StringIO
+   from pvlab.io.dictmaker import get_dict
    data = "readings:21\nminG:600\nrefG:1000"
    settings = get_dict(io.StringIO(data), dtype='int', isStringIO=True)
-   # ... argument ``io.StringIO(data)`` can be replaced by a file name.
+   # ... argument "io.StringIO(data)" can be replaced by a file name.
    settings
    {'readings': 21, 'minG': 600, 'refG': 1000}
 
@@ -49,6 +51,8 @@ Function get_dict
 
 .. code-block:: python
 
+   from io import StringIO
+   from pvlab.io.dictmaker import get_dict
    data = "man.:'manufacturer'\nmod.:'model'\nsn.:'seriesnr'"
    mydict = get_dict(io.StringIO(data), dtype='str', isStringIO=True)
    mydict
@@ -63,7 +67,7 @@ Function get_dicts_list
    Generate a list of dicts from a list of parameter files or ``io.StringIO``
    objects.
 
-   It uses the previous function ``get_dict`` recursively, from correlative
+   It calls the previous function ``get_dict`` recursively, from correlative
    values of ``filelist`` and ``dtypelist`` arguments.
 
 
@@ -71,6 +75,8 @@ Function get_dicts_list
 
 .. code-block:: python
 
+   from io import StringIO
+   from pvlab.io.dictmaker import get_dicts_list
    floatdata = "maxdev:0.02\noffsetthreeshold:2.0"
    filters = io.StringIO(floatdata)  # StringIO_1 (or filename_1)
    strdata = "mode_refpyr:'voltage'\nmode_dut:'currentloop'"
