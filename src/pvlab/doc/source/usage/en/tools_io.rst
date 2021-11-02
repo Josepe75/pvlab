@@ -4,8 +4,8 @@ I/O Management
 
 Provide tools for data input/output.
 
-dicts from Source Files
-^^^^^^^^^^^^^^^^^^^^^^^
+Create dicts from Source Files
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. py:module:: pvlab.io.dictmaker
 
@@ -97,3 +97,119 @@ Function get_dicts_list
    caliblist[1]  # ... data from StringIO_2 (or filename_2)
    {'mode_refpyr': 'voltage', 'mode_dut': 'currentloop'}
    
+
+Create a channels list
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. py:module:: pvlab.io.channels
+
+Provide tools to facilitate the selection of relevant data.
+
+It contains the following functions:
+
+.. py:function:: pvlab.io.channels.set_channels(numbers: Iterable[int], names: Iterable[int], nameafter: bool = True) -> Iterable[str]:
+
+   Generate a list of channel names from a set of numbers and a set of names.
+   
+   It is designed to automate the selection of specific active
+   channels,*e.g.* within data frames containing a big number of data
+   columns.
+   
+   Given a list of *n* numbers (``numbers``) and *m* names (``names``), it
+   generates a list of channel names in the form:
+   
+    [
+    [**number_1**][**name_1**],
+    [**number_1**][**name_2**], ...,
+    [**number_1**][**name_m**],
+    , ...,
+    , ...,
+    , ...,
+    [**number_n**][**name_1**],
+    **number_n**][**name_2**], ...,
+    [**number_n**][**name_m**],
+    ]
+
+    If argument ``nameafter`` is True (by default), names
+    are added after numbers. Otherwise, names are added before numbers.
+
+    Item types (both numbers and names) must be convertible into strings.
+
+    If the ``numbers`` list is empty, it directly retuns the ``names`` list.
+    In the same way, if the ``names`` list is empty, it returns the
+    ``numbers`` list. Anyway, it performs a previous conversion into ``str``
+    types.
+
+    At least one list must not be empty.
+
+**Example 1**: function ``set_channels``.
+
+.. code-block:: python
+
+   from pvlab.io.channels import set_channels
+   
+   numbers = [101, 115, 207]
+   names = ['(Time stamp)', '(VDC)']
+   
+   set_channels(numbers, names).__class__ == list
+   True
+   len(set_channels(numbers, names)) == 6
+   True
+   
+   channels = set_channels(numbers, names)
+   
+   channels[:2]
+   ['101(Time stamp)', '101(VDC)']
+   channels[2:4]
+   ['115(Time stamp)', '115(VDC)']
+   channels[4:]
+   ['207(Time stamp)', '207(VDC)']
+   
+   
+.. py:function:: pvlab.io.channels.set_channels_grouped(numbergroups: Iterable[list], namegroups: Iterable[list], nameafter: bool = True, unify: bool = True, init_channels: list = []) -> Iterable[str]:
+
+   Generate a list of channels from multiple sets of numbers and names.
+   
+   It applies recursively the fuction ``set_channels`` to multiple sets
+   of numbers and names. Therefore, it allows the generation of multiple
+   channel names that contains different names.
+   
+   Argument ``nameafter`` possesses the same significance than in
+   ``set_channels``, and defaults to ``True``.
+    
+   Argument ``unify`` (defaults ``True``) returns a unique list of channels.
+   When it is ``False``, it returns separate lists.
+   
+**Example 2**: function ``set_channels_grouped``.
+
+.. code-block:: python
+
+    from pvlab.io.channels import set_channels_grouped
+    
+    numbers1 = [101, 102, 104]
+    numbers2 = [201, 202, 204]
+    
+    names1 = ['(Time stamp)', '(voltage)']
+    names2 = ['(Time stamp)', '(temperature)']
+    
+    channels = set_channels_grouped([numbers1, numbers2], [names1, names2])
+    
+    # let's do some checking:
+    channels.__class__ == list  # it should return a list
+    True
+    channels[:2]  # the first two elements ...
+    ['101(Time stamp)', '101(voltage)']
+    channels[-2:]  # ... and the last two.
+    ['204(Time stamp)', '204(temperature)']
+    
+    # On the other hand, being ...
+    len_1 = len(numbers1) * len(names1)
+    # and ...
+    len_1 = len(numbers1) * len(names1)
+    # the total amount of items generated should be ...
+    len(channels) == len_1 + len_2
+    True
+    
+    # Finally, all items must be strings...
+    [type(item) for item in channels] == [str] * len(channels)
+    True
