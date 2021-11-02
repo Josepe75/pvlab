@@ -98,8 +98,8 @@ Function get_dicts_list
    {'mode_refpyr': 'voltage', 'mode_dut': 'currentloop'}
    
 
-Create a channels list
-^^^^^^^^^^^^^^^^^^^^^^
+Create a list of channels
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. py:module:: pvlab.io.channels
 
