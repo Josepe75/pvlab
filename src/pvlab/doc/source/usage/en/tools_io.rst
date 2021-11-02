@@ -107,6 +107,9 @@ Provide tools to facilitate the selection of relevant data.
 
 It contains the following functions:
 
+Function set_channels
+"""""""""""""""""""""
+
 .. py:function:: pvlab.io.channels.set_channels(numbers: Iterable[int], names: Iterable[int], nameafter: bool = True) -> Iterable[str]:
 
    Generate a list of channel names from a set of numbers and a set of names.
@@ -165,6 +168,9 @@ It contains the following functions:
    channels[4:]
    ['207(Time stamp)', '207(VDC)']
    
+  
+Function set_channels_grouped
+"""""""""""""""""""""""""""""
    
 .. py:function:: pvlab.io.channels.set_channels_grouped(numbergroups: Iterable[list], namegroups: Iterable[list], nameafter: bool = True, unify: bool = True, init_channels: list = []) -> Iterable[str]:
 
