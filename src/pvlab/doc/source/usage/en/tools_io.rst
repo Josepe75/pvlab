@@ -175,7 +175,7 @@ Function set_channels_grouped
    
 .. py:function:: pvlab.io.channels.set_channels_grouped(numbergroups: Iterable[list], namegroups: Iterable[list], nameafter: bool = True, unify: bool = True, init_channels: list = []) -> Iterable[str]:
 
-   Generate a list of channels from multiple sets of numbers and names.
+   Generate a list of channels from multiple lists of numbers and names.
    
    It applies recursively the fuction ``set_channels`` to multiple sets
    of numbers and names. Therefore, it allows the generation of multiple
@@ -191,10 +191,10 @@ Function set_channels_grouped
    If arguments 'numbergroups' and 'namegroups' are not of the same length,
    the shorter one marks the end of parsing, and further terms in the
    larger argument are neglected, so ``numbers3`` argument in an entry like:
-   ``set_channels_grouped([numbers1, numbers2, [numbers3]],
-   [[names1], [names2]])`` is neglected, and so it is ``names3`` argument
-   in entry ``set_channels_grouped([[numbers1], [numbers2]],
-   [[names1], [names2], [names3]])``.
+   ``set_channels_grouped([numbers1, numbers2, numbers3],
+   [names1, names2])`` is neglected, and so it is ``names3`` argument
+   in entry ``set_channels_grouped([numbers1, numbers2],
+   [names1, names2, names3])``.
    
 **Example 2**: function ``set_channels_grouped``.
 
