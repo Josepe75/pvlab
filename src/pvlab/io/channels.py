@@ -38,6 +38,7 @@ def set_channels(numbers: Iterable[int],
     Item types (both numbers and names) must be convertible into strings.
 
     If the ``numbers`` list is empty, it directly retuns the ``names`` list.
+    
     In the same way, if the ``names`` list is empty, it returns the
     ``numbers`` list. Anyway, it performs a previous conversion into ``str``
     types.
@@ -113,8 +114,9 @@ def set_channels_grouped(numbergroups: Iterable[list],
     Argument ``nameafter`` possesses the same significance than in
     ``set_channels``, and defaults to ``True``.
 
-    Argument ``unify`` (defaults ``True``) returns a unique list of channels.
-    When it is ``False``, it returns separate lists.
+    If argument ``unify`` (defaults ``True``) is True, function returns 
+    a unique list of channels. If it is ``False``, function returns
+    separate lists.
 
     **Example 2**: function ``set_channels_grouped``.
 
