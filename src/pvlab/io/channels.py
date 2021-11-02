@@ -30,7 +30,7 @@ def set_channels(numbers: Iterable[int],
     [**number_n**][**name_1**],
     **number_n**][**name_2**], ...,
     [**number_n**][**name_m**],
-    ].
+    ]
 
     If argument ``nameafter`` is True (by default), names
     are added after numbers. Otherwise, names are added before numbers.
@@ -38,7 +38,6 @@ def set_channels(numbers: Iterable[int],
     Item types (both numbers and names) must be convertible into strings.
 
     If the ``numbers`` list is empty, it directly retuns the ``names`` list.
-    
     In the same way, if the ``names`` list is empty, it returns the
     ``numbers`` list. Anyway, it performs a previous conversion into ``str``
     types.
@@ -53,13 +52,18 @@ def set_channels(numbers: Iterable[int],
 
     >>> set_channels(numbers, names).__class__ == list
     True
-    >>> len(set_channels(numbers, names))
-    6
+
+    >>> len(set_channels(numbers, names)) == 6
+    True
+
     >>> channels = set_channels(numbers, names)
+
     >>> channels[:2]
     ['101(Time stamp)', '101(VDC)']
+
     >>> channels[2:4]
     ['115(Time stamp)', '115(VDC)']
+
     >>> channels[4:]
     ['207(Time stamp)', '207(VDC)']
     """
@@ -114,27 +118,31 @@ def set_channels_grouped(numbergroups: Iterable[list],
     Argument ``nameafter`` possesses the same significance than in
     ``set_channels``, and defaults to ``True``.
 
-    If argument ``unify`` (defaults ``True``) is True, function returns 
+    If argument ``unify`` (defaults ``True``) is True, function returns
     a unique list of channels. If it is ``False``, function returns
     separate lists.
 
     **Example 2**: function ``set_channels_grouped``.
 
     >>> numbers1 = [101, 102, 104]
+
     >>> numbers2 = [201, 202, 204]
+
     >>> names1 = ['(Time stamp)', '(voltage)']
+
     >>> names2 = ['(Time stamp)', '(temperature)']
+
     >>> channels = set_channels_grouped([numbers1, numbers2], [names1, names2])
 
-    # let's do a checking:
+    # let's do some checking:
     >>> channels.__class__ == list  # it returns a list
     True
-    >>> channels[:2]  # the firs two elements ...
+    >>> channels[:2]  # the first two elements ...
     ['101(Time stamp)', '101(voltage)']
     >>> channels[-2:]  # ... and the last two.
     ['204(Time stamp)', '204(temperature)']
 
-    # being...:
+    # On the other hand, being...:
     >>> len_1 = len(numbers1) * len(names1)
 
     # and...:
@@ -143,7 +151,7 @@ def set_channels_grouped(numbergroups: Iterable[list],
     >>> len(channels) == len_1 + len_2  # the total number of items
     True
 
-    # Finally, all items must be strings:
+    # Finally, all items must be strings...
     >>> [type(item) for item in channels] == [str] * len(channels)
     True
     """
@@ -157,7 +165,12 @@ def set_channels_grouped(numbergroups: Iterable[list],
     try:
         assert len(numbergroups) == len(namegroups)
     except AssertionError:
-        print("All argument lists must be of the same length.")
+        print("Length of 'numbergroups' and 'namegroups' must be equal.")
+
+    try:
+        assert [len(numbergroups), len(namegroups)] != [0, 0]
+    except AssertionError:
+        print("Arguments cannot be empty lists.")
 
     try:
         if len(numbergroups) == len(namegroups) == 1:
@@ -184,3 +197,4 @@ def set_channels_grouped(numbergroups: Iterable[list],
 if __name__ == '__main__':
     import doctest
     doctest.testmod(verbose=1)
+
