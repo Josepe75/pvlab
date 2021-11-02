@@ -190,7 +190,7 @@ Function set_channels_grouped
    
    If arguments 'numbergroups' and 'namegroups' are not of the same length,
    the shorter one marks the end of parsing, and further terms in the
-   larger argument are neglected, so ``numbers2`` argument in an entry like:
+   larger argument are neglected, so ``numbers3`` argument in an entry like:
    ``set_channels_grouped([numbers1, numbers2, [numbers3]],
    [[names1], [names2]])`` is neglected, and so it is ``names3`` argument
    in entry ``set_channels_grouped([[numbers1], [numbers2]],
