@@ -15,7 +15,7 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html
 #
 import os
 import sys
-import myst_parser
+
 sys.path.insert(0, os.path.abspath('.'))
 sys.path.insert(1, os.path.abspath('..'))
 sys.path.insert(2, os.path.abspath(os.path.join('..',
@@ -80,9 +80,8 @@ master_doc = 'index'
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.intersphinx',
-    'myst_parser',
-]
+    'sphinx.ext.intersphinx']
+
 intersphinx_mapping = {'phython': ('https://docs.python.org/3', None)}
 
 # Add any paths that contain templates here, relative to this directory.
@@ -156,7 +155,7 @@ math_numfig = True
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'classic'
+html_theme = 'alabaster'
 html_theme_options = {
     "rightsidebar": "true",
     "relbarbgcolor": "black"
