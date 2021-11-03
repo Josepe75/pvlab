@@ -35,13 +35,14 @@ object:
 
 .. code-block:: python
 
-   from pvlab.dataframes.dfdicts import dict_to_df
-   
-   dates = {'START_1': (2021,5,5,8,1,0), 'END_1': (2021,5,6,22,52,0)}
-   columns = ['%Y', '%m', '%d', '%H', '%M', '%S']
-   
-   dict_to_df(dates, columns)
-                 %Y  %m  %d  %H  %M  %S
+   >>> from pvlab.dataframes.dfdicts import dict_to_df
+
+   >>> dates = {'START_1': (2021,5,5,8,1,0), 'END_1': (2021,5,6,22,52,0)}
+
+   >>> columns = ['%Y', '%m', '%d', '%H', '%M', '%S']
+
+   >>> dict_to_df(dates, columns)
+              %Y  %m  %d  %H  %M  %S
    START_1  2021   5   5   8   1   0
    END_1    2021   5   6  22  52   0
 
@@ -52,12 +53,11 @@ does not match the length of the values of the given dictionary:
 
 .. code-block:: python
 
-   from pvlab.dataframes.dfdicts import dict_to_df
-   
-   dates = {'START_1': (2021,5,5,8,1,0), 'END_1': (2021,5,6,22,52,0)}
-   columns = ['%Y', '%m', '%d', '%H', '%M']
-   
-   dict_to_df(dates, columns)
+   >>> from pvlab.dataframes.dfdicts import dict_to_df
+
+   >>> columns = ['%Y', '%m', '%d', '%H', '%M']
+
+   >>> dict_to_df(dates, columns) # doctest: +IGNORE_EXCEPTION_DETAIL
    Traceback (most recent call last):
        ...
    ValueError: Length of columns list is equal to 5, but has to be equal to 6.
@@ -69,12 +69,11 @@ Function print_dict
 
 .. code-block:: python
 
-   from pvlab.dataframes.dfdicts import dict_to_df
-   
-   dates = {'START_1': (2021,5,5,8,1,0), 'END_1': (2021,5,6,22,52,0)}
-   columns = ['%Y', '%m', '%d', '%H', '%M', '%S', '%mS']
-   
-   dict_to_df(dates, columns)
+   >>> from pvlab.dataframes.dfdicts import dict_to_df
+
+   >>> columns = ['%Y', '%m', '%d', '%H', '%M', '%S', '%mS']
+
+   >>> dict_to_df(dates, columns) # doctest: +IGNORE_EXCEPTION_DETAIL
    Traceback (most recent call last):
        ...
    ValueError: Length of columns list is equal to 7, but has to be equal to 6.
@@ -82,7 +81,7 @@ Function print_dict
 
 .. py:function:: print_dict(dictionary: dict, columns: list, title: str = '') -> None
 
-   "Prettyprint" a dictionary of dates, adding a title.
+   Prettyprint a dictionary of dates, adding a title.
    It appears to be similar to dict_to_df, but print_dict just print,
    (it does not return a pandas.DataFrame object, it returns None):
 
@@ -90,15 +89,17 @@ Function print_dict
 
 .. code-block:: python
 
-   from pvlab.dataframes.dfdicts import print_dict
-   
-   dates = {'START_1': (2021,5,5,8,1,0), 'END_1': (2021,5,6,22,52,0)}
-   columns = ['%Y', '%m', '%d', '%H', '%M', '%S']
-   title = 'Valid time intervals'
-   
-   print_dict(dates, columns, title)
+   >>> from pvlab.dataframes.dfdicts import print_dict
+
+   >>> dates = {'START_1': (2021,5,5,8,1,0), 'END_1': (2021,5,6,22,52,0)}
+
+   >>> columns = ['%Y', '%m', '%d', '%H', '%M', '%S']
+
+   >>> title = 'Valid time intervals'
+
+   >>> print_dict(dates, columns, title)
    Valid time intervals
    --------------------
-               %Y  %m  %d  %H  %M  %S
+              %Y  %m  %d  %H  %M  %S
    START_1  2021   5   5   8   1   0
    END_1    2021   5   6  22  52   0
