@@ -1,6 +1,6 @@
-==========
-What's New
-==========
+===============
+Release History
+===============
 
 See what's new in the latest release of ``pvlab`` project.
 
