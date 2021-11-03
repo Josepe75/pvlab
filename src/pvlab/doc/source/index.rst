@@ -13,7 +13,7 @@ Welcome to pvlab's documentation!
 
    /usage/en/LICENSE
    /usage/en/README
-   /usage/en/whatsnew
+   /usage/en/release_hist
    /usage/en/installation
    /usage/en/tools_dataframes
    /usage/en/tools_math
