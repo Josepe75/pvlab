@@ -7,7 +7,7 @@ Introduction
 PVLAB is a project devoted to the development and improvement of scientific
 software for the measurement, calibration and modeling of the performance of
 photovoltaic devices and solar sensors. PVLAB package born from the efforts
-in data treatment during the calibration of pyranometers at
+in data treatment performed during the calibration of pyranometers at
 the `Laboratory of Photovoltaic Solar Energy (PVLab)`_ of the `Research Center
 for Energy, Environment and Technology (CIEMAT)`_ in Madrid, Spain.
 In next releases, ``pvlab`` will provide sets of tools, mainly consisting in
@@ -18,19 +18,19 @@ procedures of solar sensors and photovoltaic devices.
 
 History
 -------
-The origin of ``pvlab`` is a python tool, named ``calibration``, which is being
-developed since 2019 in PVLab-CIEMAT for its own use.
-It was originally designed to manage the big amount of data
-generated during the outdoor measurements, while performing the routine
-calibration of pyranometers.
+The origin of ``pvlab`` is a python tool, named ``calibration``, which is
+being developed since 2019 in PVLab-CIEMAT for its own use. It was
+originally designed to manage the big amount of data generated during
+the outdoor measurements, while performing the routine calibration
+of pyranometers. 
 
-Soon, both the *python programming language* and the ``calibration`` tool
+Soon, both the *Python programming language* and the ``calibration`` tool
 themselves proved to be quick and reliable methods for data treatment.
 Gradually, the code grew in complexity, whereas new functionalities were
-enabled. Indeed, to the basic requirements of data *I/O* and a first block
-of calculations, some others joined, like fine data-filtering, determination
-of total uncertainty, tools for report generation, graphics
-and further calibration records.
+being enabled. Indeed, to the basic requirements of data *I/O* and a first
+block of core calculations, some others joined, like fine data-filtering,
+determination of error sources and total uncertainty, tools for generation
+of reports, graphics and further calibration records.
 
 Finally, when it was concluded the development of the version 2.0.0 of the
 application ``calibration``, it became clear that a formal package should
@@ -54,7 +54,7 @@ the *unittest* built-in package.
 
 On the other hand, author's hope is that ``pvlab`` will eventually
 turn into a **community-developed library**, so contributions and 
-constructive comments are welcome. At this respect, ``pvlab``adopt the
+constructive comments are welcome. At this respect, ``pvlab`` adopts the
 aim of providing resources in the context of measurement, calibration,
 determination of uncertainty, validation techniques and potentially,
 many other utilities for the improvement of data treatment for solar sensors
