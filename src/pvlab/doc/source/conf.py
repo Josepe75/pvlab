@@ -15,6 +15,7 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html
 #
 import os
 import sys
+
 sys.path.insert(0, os.path.abspath('.'))
 sys.path.insert(1, os.path.abspath('..'))
 sys.path.insert(2, os.path.abspath(os.path.join('..',
@@ -56,10 +57,10 @@ sys.path.insert(10, os.path.abspath(os.path.join('.',
 
 project = 'pvlab'
 copyright = '2021, Silva J.P.'
-author = 'Silva J.P'
+author = 'Silva J.P.'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1.0.dev6'
+release = '0.1.0.dev7'
 
 # The major project version, use as the replacement for |version|
 version = '0.1.0'
@@ -79,8 +80,8 @@ master_doc = 'index'
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.intersphinx',
-]
+    'sphinx.ext.intersphinx']
+
 intersphinx_mapping = {'phython': ('https://docs.python.org/3', None)}
 
 # Add any paths that contain templates here, relative to this directory.
@@ -155,6 +156,10 @@ math_numfig = True
 # a list of builtin themes.
 #
 html_theme = 'alabaster'
+html_theme_options = {
+    "rightsidebar": "true",
+    "relbarbgcolor": "black"
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

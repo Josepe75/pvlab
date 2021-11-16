@@ -90,9 +90,9 @@ def print_dict(dictionary: dict,
         subscript = '-' * len(title)
     elif not title:
         subscript = ''
-    print(title + '\n',
-          subscript + '\n',
-          dict_to_df(dictionary, columns))
+    print(title)
+    print(subscript)
+    print(dict_to_df(dictionary, columns))
 
 
 if __name__ == "__main__":

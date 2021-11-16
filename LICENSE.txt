@@ -5,7 +5,7 @@ License
 License: bsd-3-clause
 ---------------------
 
-Copyright 2019-2021, José P. Silva. All rights reserved.
+|copy| 2019-2021, José P. Silva |---| All rights reserved.
 
 1. Redistribution and use in source and binary forms,
 with or without modification, are permitted provided that the
@@ -33,3 +33,9 @@ OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
 ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
 TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
 USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+..|copy| unicode:: Copyright 0xA9
+
+..|---| unicode:: U+02014
+

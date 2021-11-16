@@ -18,7 +18,7 @@ Composition of quantities, intended for statistical purposes.
 Function module
 """""""""""""""
 
-.. py:function:: pvlab.math.module(*components: Sequence[float]) -> float:
+.. py:function:: pvlab.math.module.module(*components: Sequence[float]) -> float:
 
    Calculate the module of a vector, or the result of a quadratic composition,
    given its components. It supports n-dimensional components.
@@ -37,7 +37,10 @@ Function module
 
 .. code-block:: python
 
+   from pvlab.math.module import module
+   
    components = [5, 8, 3, 6]
+   
    round(module(*components), 3)
    11.576
 
@@ -46,9 +49,13 @@ Function module
 
 .. code-block:: python
 
+   from pvlab.math.module import module
+
    components = [5, 3, 8, '6']
    module(*components)
+   
    Traceback (most recent call last):
+       ...
    TypeError: components items must be int or float types.
 
 

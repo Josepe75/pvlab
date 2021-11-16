@@ -1,6 +1,6 @@
-==========
-What's New
-==========
+===============
+Release History
+===============
 
 See what's new in the latest release of ``pvlab`` project.
 
@@ -18,4 +18,5 @@ See what's new in the latest release of ``pvlab`` project.
    /usage/en/releases/v0.1.0.dev4
    /usage/en/releases/v0.1.0.dev5
    /usage/en/releases/v0.1.0.dev6
+   /usage/en/releases/v0.1.0.dev7
    
