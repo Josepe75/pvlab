@@ -35,6 +35,6 @@ TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
 USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-..|copy| unicode:: Copyright 0xA9
+.. |copy| unicode:: Copyright 0xA9
 
-..|---| unicode:: U+02014
+.. |---| unicode:: U+02014
